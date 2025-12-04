@@ -1,38 +1,79 @@
-# MyDevOps‑App: Dockerized Web Server Project
+# MyDevOps-App: Dockerized Web Server Project
 
-**A simple web server containerized using Docker, demonstrating containerization, web hosting, and DevOps fundamentals.**
+**A simple web server containerized using Docker, demonstrating containerization, static web hosting, and DevOps fundamentals.**
+
+---
 
 ## 🔎 Project Overview  
-This repo contains a minimal static web application (HTML) served via a Docker container. The goal was to practice containerization, Dockerfile configuration, and web service deployment — as a stepping stone for cloud or DevOps‑oriented roles.
+
+This repository contains a minimal static web application (HTML) served via a Docker container. The project demonstrates **containerization, Dockerfile configuration, web service deployment, and DevOps best practices**.  
+
+The goal is to showcase practical skills for cloud and DevOps roles.
+
+---
 
 ## 🛠 Technologies Used  
+
 - Docker  
 - HTML (static web content)  
-- Linux / shell environment  
-- (Optional) Further deploy to AWS / cloud  
+- Linux / shell commands  
+- (Optional) Future deployment to cloud services like AWS EC2 or ECS  
+
+---
 
 ## 📦 Build & Run Instructions  
 
 ```bash
-# Build Docker image  
+# 1️⃣ Build Docker image
 docker build -t mydevops-app .
 
-# Run container (mapping port 80)  
+# 2️⃣ Run Docker container (maps container port 80 to host port 8080)
 docker run -d -p 8080:80 --name webapp mydevops-app
 
-# Open browser and visit  
+# 3️⃣ Open browser to test
 http://localhost:8080
+```
 
-✅ What this project demonstrates
+---
 
-1.Containerization using Docker
-2.Static web hosting via HTTP server inside container
-3.Understanding of Dockerfile and container lifecycle
-4.Basics of web serving, port mapping, and container deployment
+## 📸 Demo / Output  
 
-🚀 Future Enhancements (Planned)
+![Website Screenshot](screenshorts/demo1.png)  
+*(Add more screenshots if needed — place in the `screenshorts` folder)*
 
-1.Add a dynamic backend (e.g. Python/Node) inside container
-2.Configure deployment via CI/CD pipeline (GitHub Actions)
-3.Deploy to cloud (AWS EC2 / ECS / EKS) for real-world exposure
-4.Add HTTPS support using reverse proxy + SSL
+When running the container, the static website should display your `index.html` content in the browser at port 8080.
+
+---
+
+## ✅ What this project demonstrates  
+
+- Containerization using Docker  
+- Building and running Docker images  
+- Static web hosting inside a container  
+- Understanding of Dockerfile and container lifecycle  
+- Web server setup and port mapping  
+- Basics of DevOps workflow for deployment  
+
+---
+
+## 🚀 Future Enhancements  
+
+- Add a dynamic backend (Python / Node.js) inside the container  
+- Integrate CI/CD with GitHub Actions for automated builds  
+- Deploy to cloud platforms like AWS EC2, ECS, or Kubernetes  
+- Enable HTTPS using reverse proxy and SSL certificates  
+
+---
+
+## 📄 License  
+
+MIT License — free to use, modify, and share for learning or demonstration purposes  
+
+---
+
+## 📝 Notes  
+
+- Screenshots are stored in the `screenshorts` folder  
+- Ensure Docker is installed locally to build and run the project  
+- Port 8080 is used for local access; you can change this in the run command if needed  
+
