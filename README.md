@@ -33,16 +33,6 @@ docker run -d -p 8080:80 --name webapp mydevops-app
 # 3️⃣ Open browser to test
 http://localhost:8080
 ```
-
----
-
-## 📸 Demo / Output  
-
-![Website Screenshot](screenshorts/demo1.png)  
-*(Add more screenshots if needed — place in the `screenshorts` folder)*
-
-When running the container, the static website should display your `index.html` content in the browser at port 8080.
-
 ---
 
 ## ✅ What this project demonstrates  
